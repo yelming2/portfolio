@@ -1,0 +1,434 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+
+.header {
+    position: fixed;
+    width: 100%;
+    top:0;
+    box-sizing: border-box;
+    padding: 1rem 5rem;
+    backdrop-filter: blur(40px);
+    background-color: #00000033;
+    border-bottom: 1px solid darkgray;
+    z-index: 2;
+  }
+
+.header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    max-width: 100%; 
+    gap: 1rem; 
+    align-items: center;
+    
+}
+
+.header ul.mobile-display{
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 639px) {
+
+    .header ul.mobile-display{
+        display: flex;
+    }
+
+    .header ul.mobile-hidden{
+        display: none;
+    }
+}
+
+
+.header a{
+    font-size: 1.25 rem;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0.5rem 0;
+    box-sizing: border-box;
+    display: block;
+    font-family: 'Pretendard Variable';
+    font-weight: 300;
+}
+
+
+.header a:visited{
+    color: #ffffff;
+}
+
+.header a:hover{
+    color:rgb(156, 156, 156);
+}
+
+.header a:active{
+    color:rgb(255, 255, 255);
+}
+
+.header .spacer{
+    flex-grow:2;
+}
+
+.header #name{
+    position: relative;
+  	font-size: 2rem;
+  	letter-spacing: -0.02em;
+  	line-height: 150%;
+  	font-weight: 500;
+  	font-family: 'SF Pro';
+}
+
+
+.about-me {
+  	position: relative;
+  	text-decoration: underline;
+  	letter-spacing: -0.02em;
+  	line-height: 150%;
+  	font-weight: 600;
+}
+.works {
+  	position: relative;
+  	letter-spacing: -0.02em;
+  	line-height: 150%;
+}
+.about-me-parent {
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	gap: 2.5rem;
+}
+
+.contact-wrapper {
+  	width: 10.313rem;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-end;
+}
+.component-2 {
+  	position: absolute;
+  	top: 0rem;
+  	left: 0rem;
+  	backdrop-filter: blur(32px);
+  	background-color: rgba(0, 0, 0, 0.2);
+  	width: 94.5rem;
+  	height: 6.25rem;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: space-between;
+  	padding: 0rem 5rem;
+  	box-sizing: border-box;
+}
+.about-meweb-child {
+  	position: absolute;
+  	top: 4.188rem;
+  	left: 44.375rem;
+  	width: 6.25rem;
+  	height: 6.25rem;
+  	overflow: hidden;
+}
+.yerim-kim {
+  	width: 17.25rem;
+  	position: relative;
+  	letter-spacing: -0.01em;
+  	line-height: 150%;
+  	display: inline-block;
+    color: #ffffff;
+}
+.icon {
+  	width: 24rem;
+  	position: relative;
+  	height: 30rem;
+  	object-fit: cover;
+}
+.hello-i-am {
+  	margin: 0;
+}
+.hello-i-am-container {
+  	align-self: stretch;
+  	position: relative;
+  	font-size: 2rem;
+  	letter-spacing: -0.02em;
+  	line-height: 132%;
+    color: #ffffff;
+}
+.uxui-container {
+  	align-self: stretch;
+  	position: relative;
+  	font-size: 1.5rem;
+  	letter-spacing: -0.02em;
+  	line-height: 150%;
+    color: #ffffff;
+}
+.yerim-kim-parent {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 1.25rem;
+}
+.skills {
+  	position: relative;
+  	letter-spacing: -0.01em;
+  	line-height: 150%;
+}
+.layer-1-icon {
+  	width: 4rem;
+  	position: relative;
+  	height: 4rem;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.layer-1-icon2 {
+  	width: 1.75rem;
+  	position: relative;
+  	height: 2.606rem;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.layer-1-wrapper {
+  	width: 4rem;
+  	border-radius: 16px;
+  	background-color: #1e1e1e;
+  	height: 4rem;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+}
+.katman-1-icon {
+  	width: 4rem;
+  	position: relative;
+  	height: 3.9rem;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.layer-1-parent {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-start;
+  	flex-wrap: wrap;
+  	align-content: center;
+  	gap: 0.687rem;
+}
+.skills-parent {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 1.25rem;
+  	font-size: 1.25rem;
+  	color: #dcdcdc;
+}
+.frame-group {
+  	width: 23.875rem;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 2.5rem;
+}
+.subtitle {
+  	position: relative;
+  	font-size: 1.5rem;
+  	letter-spacing: -0.01em;
+  	line-height: 150%;
+  	color: #fff;
+}
+.subtitle-parent {
+  	width: 9.375rem;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 0.5rem;
+}
+.uxui1 {
+  	position: relative;
+  	font-size: 1.75rem;
+  	letter-spacing: -0.01em;
+  	line-height: 150%;
+  	font-weight: 500;
+  	color: #fff;
+}
+.frame-div {
+  	display: flex;
+  	flex-direction: row;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 2.5rem;
+  	color: #6f717c;
+}
+.career-parent {
+  	align-self: stretch;
+  	border-bottom: 1px solid #595959;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	padding: 0rem 0rem 3.75rem;
+  	gap: 0.75rem;
+}
+.sw {
+  	position: relative;
+  	letter-spacing: -0.01em;
+  	line-height: 150%;
+  	font-weight: 500;
+}
+.div2 {
+  	position: relative;
+  	font-size: 1.25rem;
+  	letter-spacing: -0.02em;
+  	line-height: 150%;
+  	color: #6f717c;
+}
+.sw-parent {
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 0.5rem;
+}
+.frame-parent1 {
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 2rem;
+  	font-size: 1.75rem;
+  	color: #fff;
+}
+.body1 {
+  	position: relative;
+  	font-size: 1rem;
+  	letter-spacing: -0.02em;
+  	line-height: 150%;
+  	color: #6f717c;
+}
+.arible-uxui-brand-parent {
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 0.25rem;
+}
+.frame-parent4 {
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 1.25rem;
+  	font-size: 1.75rem;
+}
+.frame-parent3 {
+  	display: flex;
+  	flex-direction: row;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 3.75rem;
+}
+.frame-parent6 {
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: center;
+  	gap: 1.25rem;
+  	font-size: 1.75rem;
+}
+.oso-re-uxui-brand {
+  	align-self: stretch;
+  	position: relative;
+  	letter-spacing: -0.01em;
+  	line-height: 150%;
+  	font-weight: 500;
+  	white-space: pre-wrap;
+}
+.wrapper {
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	font-size: 1.25rem;
+  	color: #6f717c;
+}
+.oso-re-uxui-brand-parent {
+  	flex: 1;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 1.25rem;
+  	font-size: 1.75rem;
+}
+.frame-parent7 {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 3.75rem;
+}
+.frame-parent2 {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 3.25rem;
+  	font-size: 1.5rem;
+  	color: #fff;
+}
+.frame-container {
+  	width: 55.813rem;
+  	height: 52.625rem;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 3.75rem;
+  	font-size: 1.25rem;
+  	color: #dcdcdc;
+}
+.frame-parent {
+  	position: absolute;
+  	top: 6.25rem;
+  	left: 0rem;
+  	width: 94.5rem;
+  	height: 55.125rem;
+  	overflow-y: auto;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: flex-start;
+  	justify-content: space-between;
+  	padding: 2.5rem 5rem;
+  	box-sizing: border-box;
+  	font-size: 1.75rem;
+}
+.about-meweb {
+  	width: 100%;
+  	position: relative;
+  	background-color: #000;
+  	height: 101.625rem;
+  	overflow: hidden;
+  	text-align: left;
+  	font-size: 1.25rem;
+  	color: #fff;
+  	font-family: 'Pretendard Variable';
+}
+
+
+@media only screen and (max-width: 892px) {
+	.about-meweb-child{
+		display: inline;
+	}
+    .frame-parent .yerim-kim-parent{
+		flex-direction: row;
+	}
+
+}

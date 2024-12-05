@@ -1,0 +1,341 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+
+.header {
+    position: fixed;
+    width: 100%;
+    top:0;
+    box-sizing: border-box;
+    padding: 2rem 5rem;
+    backdrop-filter: blur(40px);
+    background-color: #00000033;
+    border-bottom: 1px solid darkgray;
+    z-index: 2;
+  }
+
+  /* Q. about me랑 works 사이에 간격을 넣고 싶은데 어떻게 넣어야 하나요? */
+  
+
+.header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    max-width: 100%; 
+    gap: 1rem; 
+    align-items: center;
+}
+
+.header ul.mobile-display{
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 639px) {
+    .header{
+        padding: 1.75rem 2.5rem;
+
+    }
+
+    .header ul.mobile-display{
+        display: flex;
+        
+    }
+
+    .header ul.mobile-hidden{
+        display: none;
+    }
+}
+
+
+.header a{
+    font-size: 1.25 rem;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0.5rem 0;
+    box-sizing: border-box;
+    display: block;
+    font-family: "Pretendard Variable-Regular", Helvetica;
+    font-weight: 300;
+}
+
+.header a:visited{
+    color: #ffffff;
+}
+
+.header a:hover{
+    color:rgb(156, 156, 156);
+}
+
+.header a:active{
+    color:rgb(255, 255, 255);
+}
+
+.header .spacer{
+    flex-grow:2;
+}
+
+.header #name{
+    font-family: 'Source Serif 4', serif;
+    font-weight: 800;
+    font-style: italic;
+
+    border-radius: 50%;
+}
+
+/*body*/
+
+.union-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 109.89px;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 8px;
+    position: relative;
+}
+
+.union-wrapper .union {
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    height: 93.88px;
+
+    animation: rotate360 3s linear infinite; 
+    animation-delay: 1ms; 
+}
+
+
+@keyframes rotate360 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.frame {
+    display: flex;
+    width: 100vw;
+    height: 100%;
+    align-items: flex-start;
+    padding: 2.5rem 5rem 2.5rem 5rem;
+    box-sizing: border-box;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 6.25rem;
+    overflow: hidden;
+}
+
+.frame .union-wrapper {
+    width: 109.89px;
+    gap: 8px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+
+.frame .union {
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    height: 93.88px;
+}
+
+
+.frame .div {
+    width: 900px; 
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    gap: 6.25rem;
+}
+
+.frame .div-2 {
+    gap: 20px;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+
+.frame .text-wrapper {
+    position: relative;
+    align-self: stretch;
+    margin-top: -1.00px;
+    margin-bottom: 0;
+    font-family: "Pretendard Variable-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 36px;
+    letter-spacing: -0.80px;
+    line-height: 48px;
+}
+
+.frame .UXUI {
+    position: relative;
+    align-self: stretch;
+    font-family: "Pretendard Variable-Regular", Helvetica;
+    font-weight: 400;
+    margin: 0;
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: -0.48px;
+    line-height: 36px;
+}
+
+.frame .div-3 {
+    gap: 4px;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+
+.frame .div-4 {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.frame .text-wrapper-2 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Pretendard Variable-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 36px;
+    letter-spacing: -0.80px;
+    line-height: 48px;
+    white-space: nowrap;
+}
+
+.frame .component {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 0px 4px;
+    position: relative;
+    flex: 0 0 auto;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-color: #ffffff;
+}
+
+.frame .text-wrapper-3 {
+    position: relative;
+    width: fit-content;
+    margin-top: -3.00px;
+    font-family: "Pretendard Variable-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 36px;
+    letter-spacing: -0.80px;
+    line-height: 48px;
+    white-space: nowrap;
+}
+
+.frame .p {
+    position: relative;
+    width: 100%; /* Allows this text element to expand fully */
+    font-family: "Pretendard Variable-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 0;
+    font-size: 24px;
+    letter-spacing: -0.48px;
+    line-height: 36px;
+}
+
+@media only screen and (max-width: 892px) {
+
+    .header{
+        padding: 1.75rem 2.5rem;
+        
+    }
+    .frame .text-wrapper{
+        font-size: 32px;
+    }
+    .frame .text-wrapper2{
+        font-size: 32px;
+    }
+    .frame .text-wrapper3{
+        font-size: 32px;
+    }
+
+    .frame .UXUI{
+        font-size: 20px;
+    }
+
+    .frame .p{
+        font-size: 20px;
+    }
+
+
+/* padding 넘어서서 contents가 보여짐*/
+
+    .frame{
+        flex-direction: column;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 2rem;
+        padding: 1.75rem 2.5rem;
+    }
+
+    .div-2 .div-3{
+    box-sizing: border-box;
+    }
+    
+}
+
+@media only screen and (max-width: 639px) {
+    
+    .frame{
+        flex-direction: column;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 2rem;
+        padding: 1.75rem 1.25rem;
+        width: 100vw;
+
+        
+    }
+
+    .frame .text-wrapper{
+        font-size: 1.75rem;
+        line-height: 2.5rem;
+    }
+    .frame .text-wrapper-2{
+        font-size: 1.75rem;
+        line-height: 2.5rem;
+    }
+    .frame .text-wrapper-3{
+        font-size: 1.75rem;
+        line-height: 2.5rem;
+    }
+
+    .frame .UXUI{
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+    }
+
+    .frame .p{
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+    }
+
+}
