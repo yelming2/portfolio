@@ -1,0 +1,205 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+
+.header {
+    position: fixed;
+    width: 100%;
+    top:0;
+    box-sizing: border-box;
+    padding: 1rem 5rem;
+    backdrop-filter: blur(40px);
+    background-color: #00000033;
+    border-bottom: 1px solid darkgray;
+    z-index: 2;
+  }
+
+.header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    max-width: 100%; 
+    gap: 1rem; 
+    align-items: center;
+    
+}
+
+.header ul.mobile-display{
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 639px) {
+
+    .header ul.mobile-display{
+        display: flex;
+    }
+
+    .header ul.mobile-hidden{
+        display: none;
+    }
+}
+
+
+.header a{
+    font-size: 1.25 rem;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0.5rem 0;
+    box-sizing: border-box;
+    display: block;
+    font-family: "Pretendard Variable-Regular", Helvetica;
+    font-weight: 300;
+}
+
+
+.header a:visited{
+    color: #ffffff;
+}
+
+.header a:hover{
+    color:rgb(156, 156, 156);
+}
+
+.header a:active{
+    color:rgb(255, 255, 255);
+}
+
+.header .spacer{
+    flex-grow:2;
+}
+
+.header #name{
+    position: relative;
+    font-size: 32px;
+    letter-spacing: -0.02em;
+    line-height: 150%;
+    font-weight: 500;
+    font-family: 'SF Pro';
+}
+
+
+/*각 해당 부분을 눌렀을때 이동이 되야하는데 어떻게 a href를 사용하면 되는지??*/
+
+.whole-works {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    padding: 0px 80px;
+    position: relative;
+    box-sizing: border-box;
+}
+  
+
+.whole-works .section {
+    display: flex;
+    flex-direction: column;
+    min-width: 267px;
+    height: 100vh;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0;
+    padding: 120px 20px 60px 20px;
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+    box-sizing: border-box;
+}
+
+.union-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 109.89px;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 8px;
+    position: relative;
+}
+
+.union-wrapper .union {
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    height: 93.88px;
+    animation: rotate360 3s linear infinite; 
+    animation-delay: 1ms; 
+}
+
+
+@keyframes rotate360 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.whole-works .UXUI-design {
+    position: relative;
+    width: fit-content;
+    font-family: "Pretendard Variable-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 52px;
+    letter-spacing: -1.04px;
+    line-height: 78px;
+}
+  
+.whole-works .text-wrapper {
+    position: relative;
+    width: 106px;
+    height: 156px;
+    font-family: "Pretendard Variable-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 52px;
+    letter-spacing: -1.04px;
+    line-height: 78px;
+}
+
+    /* 호버 시 색 안바뀜 이슈 */  
+.whole-works .section:hover {
+    background-color: #ffffff;
+    color: #000000;
+    transition: background-color 0.3s ease;
+}
+
+
+@media only screen and (max-width: 892px) {
+    .whole-works{
+        flex-direction: column;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        padding: 6rem 2.5rem 1.75rem 2.5rem;
+        align-items: flex-start;
+        flex-shrink: 0;
+    }
+
+    .whole-works .section{
+        justify-content: flex-end;
+        align-items: flex-start;
+        gap: 0;
+        border-bottom: 1px solid #B3B3B3;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 2rem 20px 2rem 20px
+       
+    }
+    .whole-works .UXUI-design{
+        font-size: 32px;
+        line-height: 3rem;
+        justify-content: flex-end;
+        align-items: flex-start;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .whole-works .text-wrapper{
+        font-size: 32px;
+    }
+    .union-wrapper {
+        display: none;
+    }
+}

@@ -1,0 +1,295 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+
+.header {
+    position: fixed;
+    width: 100%;
+    top:0;
+    box-sizing: border-box;
+    padding: 1rem 5rem;
+    backdrop-filter: blur(40px);
+    background-color: #00000033;
+    border-bottom: 1px solid darkgray;
+    z-index: 2;
+  }
+
+  /* Q. about me랑 works 사이에 간격을 넣고 싶은데 어떻게 넣어야 하나요? */
+  
+
+.header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    max-width: 100%; 
+    gap: 1rem; 
+    align-items: center;
+}
+
+.header ul.mobile-display{
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 639px) {
+
+    .header ul.mobile-display{
+        display: flex;
+    }
+
+    .header ul.mobile-hidden{
+        display: none;
+    }
+}
+
+
+.header a{
+    font-size: 1.25 rem;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0.5rem 0;
+    box-sizing: border-box;
+    display: block;
+    font-family: "Pretendard Variable-Regular", Helvetica;
+    font-weight: 300;
+}
+
+.header a:visited{
+    color: #ffffff;
+}
+
+.header a:hover{
+    color:rgb(156, 156, 156);
+}
+
+.header a:active{
+    color:rgb(255, 255, 255);
+}
+
+.header .spacer{
+    flex-grow:2;
+}
+
+.header #name{
+    position: relative;
+    font-size: 32px;
+    letter-spacing: -0.02em;
+    line-height: 150%;
+    font-weight: 500;
+    font-family: 'SF Pro';
+}
+/*body*/
+
+.union-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 109.89px;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 8px;
+    position: relative;
+}
+
+.union-wrapper .union {
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    height: 93.88px;
+
+    animation: rotate360 3s linear infinite; 
+    animation-delay: 1ms; 
+}
+
+
+@keyframes rotate360 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/*body*/
+
+.works {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 40px 80px;
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 6.25rem;
+
+}
+
+.works .div {
+    display: flex;
+    flex-direction: column;
+    width: 382px;
+    height: 480px;
+    gap: 2rem;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+}
+
+.works .group {
+    position: relative;
+    width: 144.34px;
+    height: 43.82px;
+}
+
+.works .div-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.works .text-wrapper {
+    position: relative;
+    align-self: stretch;
+    margin-top: -1.00px;
+    font-family: "Pretendard Variable-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 36px;
+    letter-spacing: -0.80px;
+    line-height: 48px;
+    margin: 0;
+
+}
+
+.works .information {
+    position: relative;
+    align-self: stretch;
+    font-family: "Pretendard Variable-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: -0.48px;
+    line-height: 36px;
+    margin: 0;
+}
+
+.works .frame-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.works .div-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.works .div-4 {
+    display: inline-flex;
+    align-items: center;
+    gap: 24px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.works .div-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 91px;
+    align-items: flex-start;
+    gap: 8px;
+    position: relative;
+}
+
+.works .text-wrapper-2 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Pretendard Variable-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: -0.24px;
+    line-height: 24px;
+    white-space: nowrap;
+}
+
+.works .text-wrapper-3 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Pretendard Variable-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: -0.24px;
+    line-height: 24px;
+    white-space: nowrap;
+}
+
+.works .div-5 {
+    display: flex;
+    width: 151px;
+    align-items: center;
+    gap: 24px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.works .div-6 {
+    display: flex;
+    width: 171px;
+    align-items: center;
+    gap: 24px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+/*스크롤은 되나 안에 컨텐츠가 보이지 않음*/
+
+.works .works-img {
+    display: inline-flex;
+    flex-direction: column;
+    width: 893px;
+    height: 503px;
+    align-items: center;
+    position: relative;
+    flex: 0 0 auto;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.works .img {
+    position: relative;
+    width: 893px;
+    height: 502.31px;
+    object-fit: cover;
+}
+
+.works .element {
+    position: relative;
+    width: 893px;
+    height: 502.31px;
+    background-color: #000000;
+}
+
+.video{
+    width: 893px;
+}

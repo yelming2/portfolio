@@ -1,0 +1,208 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+
+.header {
+    position: fixed;
+    width: 100%;
+    top:0;
+    box-sizing: border-box;
+    padding: 1rem 5rem;
+    backdrop-filter: blur(40px);
+    background-color: #00000033;
+    border-bottom: 1px solid darkgray;
+    z-index: 2;
+  }
+
+.header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    max-width: 100%; 
+    gap: 1rem; 
+    align-items: center;
+    
+}
+
+.header ul.mobile-display{
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 639px) {
+
+    .header ul.mobile-display{
+        display: flex;
+    }
+
+    .header ul.mobile-hidden{
+        display: none;
+    }
+}
+
+
+.header a{
+    font-size: 1.25 rem;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0.5rem 0;
+    box-sizing: border-box;
+    display: block;
+    font-family: 'Pretendard Variable';
+    font-weight: 300;
+}
+
+
+.header a:visited{
+    color: #ffffff;
+}
+
+.header a:hover{
+    color:rgb(156, 156, 156);
+}
+
+.header a:active{
+    color:rgb(255, 255, 255);
+}
+
+.header .spacer{
+    flex-grow:2;
+}
+
+.header #name{
+    position: relative;
+  	font-size: 2rem;
+  	letter-spacing: -0.02em;
+  	line-height: 150%;
+  	font-weight: 500;
+  	font-family: 'SF Pro';
+}
+
+.union-icon {
+    align-self: stretch;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    height: 5.869rem;
+    flex-shrink: 0;
+}
+.union-wrapper {
+    width: 6.869rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+.contact {
+    position: relative;
+    letter-spacing: -0.02em;
+    line-height: 150%;
+}
+.instance-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2.5rem;
+}
+.name {
+    align-self: stretch;
+    position: relative;
+    letter-spacing: -0.01em;
+    line-height: 150%;
+}
+.frame-child {
+    align-self: stretch;
+    position: relative;
+    border-bottom: 1px solid #595959;
+    box-sizing: border-box;
+    height: 3.75rem;
+}
+.name-parent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.frame-div {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 3.75rem;
+}
+.frame-child1 {
+    align-self: stretch;
+    position: relative;
+    border-bottom: 1px solid #595959;
+    box-sizing: border-box;
+    height: 17.5rem;
+}
+.message-parent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.frame-container {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 3.75rem;
+}
+.submit {
+    position: relative;
+    letter-spacing: -0.01em;
+    line-height: 150%;
+    font-weight: 500;
+}
+.submit-wrapper {
+    width: 16.875rem;
+    background-color: #fff;
+    height: 3.75rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    color: #000;
+}
+.frame-group {
+    width: 55.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 5.875rem;
+    font-size: 1.25rem;
+    color: #dcdcdc;
+}
+.frame-parent {
+    width: 100%;
+    position: relative;
+    height: 55.125rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 2.5rem 5rem;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 3.25rem;
+    color: #fff;
+    font-family: 'Pretendard Variable';
+    margin-top: 8rem;
+}
+
+.contents{
+    color: #fff;
+}
