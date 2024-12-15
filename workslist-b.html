@@ -3,16 +3,17 @@
  <head>
      <meta charset="UTF-8">  <!-- 택스트 인코딩 포멧을 UTF-8로 선언 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Title</title> <!-- 페이지 타이틀을 Page Title로 지정 -->
+	<title>yelming portfolio</title> <!-- 페이지 타이틀을 Page Title로 지정 -->
+	<link rel="icon" type="images/png" href="images/fabicon.png">
     <link rel="stylesheet" type="text/css" href="style/normalize.css">
     <link rel="stylesheet" type="text/css" href="style/workslist.css">
     <script src="https://kit.fontawesome.com/ae75339680.js" crossorigin="anonymous"></script>\
  </head>
- 
-  <body>
-	<nav class="header">
+
+<body>
+    <nav class="header mobile-hidden">
         <div class="container">
-           <ul class="mobile-hidden">
+           <ul>
               <li><a href="about-me.html">About me</a></li>
               <li><a href="works.html">Works</a></li>
               <div class="spacer"></div>
@@ -20,13 +21,26 @@
               <div class="spacer"></div>
               <li><a id="cta" href="contact.html">Contact</a></li>
            </ul>
-           <ul class="mobile-display">
-            <li><a id="name" href="#">Yelming</a></li>
-            <div class="spacer"></div>
-            <i class="fa-solid fa-bars"></i>
-         </ul>
         </div>
    </nav>
+   <nav id="my-mobile-header" class="header mobile open mobile-display">
+      <div class="container">
+         <ul>
+            <li><a id="name" href="index.html">Yelming</a></li>
+            <div class="spacer"></div>
+            <a class="open-button" onclick="openMobileMenu()"><i class="fa-solid fa-bars"></i></a>
+            <a class="close-button" onclick="closeMobileMenu()"><i class="fa-solid fa-xmark"></i></a>
+            
+         </ul>
+         <ul class="mobile-menu-item-wrapper">
+            <li><a href="about-me.html">About me</a></li>
+            <li><a href="works.html">Works</a></li>
+            <li><a id="cta" href="contact.html">Contact</a></li>
+         </ul>
+      </div>
+   </nav>
+
+
 
  
   	<div class="dropdownyear-parent">
@@ -70,8 +84,8 @@
     		</div>
   	</div>
   	
-  	
-  	
-  	
+<script src="jsscript/script.js"></script>
+<script src="../../script/script.js"></script>
+<script src="../../script/home.js"></script>	
 </body>
 </html>
